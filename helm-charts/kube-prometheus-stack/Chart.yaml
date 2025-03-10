@@ -1,0 +1,85 @@
+name: kube-prometheus-stack
+home: https://github.com/prometheus-operator/kube-prometheus
+sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+version: 57.2.0-1
+description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards, and Prometheus rules combined with documentation and scripts to provide easy to operate end-to-end Kubernetes cluster monitoring with Prometheus using the Prometheus Operator.
+keywords:
+    - operator
+    - prometheus
+    - kube-prometheus
+maintainers:
+    - name: andrewgkew
+      email: andrew@quadcorps.co.uk
+      url: ""
+    - name: gianrubio
+      email: gianrubio@gmail.com
+      url: ""
+    - name: gkarthiks
+      email: github.gkarthiks@gmail.com
+      url: ""
+    - name: GMartinez-Sisti
+      email: kube-prometheus-stack@sisti.pt
+      url: ""
+    - name: jkroepke
+      email: github@jkroepke.de
+      url: ""
+    - name: scottrigby
+      email: scott@r6by.com
+      url: ""
+    - name: Xtigyro
+      email: miroslav.hadzhiev@gmail.com
+      url: ""
+    - name: QuentinBisson
+      email: quentin.bisson@gmail.com
+      url: ""
+icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+apiversion: v2
+condition: ""
+tags: ""
+appversion: v0.72.0
+deprecated: false
+annotations:
+    artifacthub.io/license: Apache-2.0
+    artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+        - name: Upstream Project
+          url: https://github.com/prometheus-operator/kube-prometheus
+    artifacthub.io/operator: "true"
+kubeversion: '>=1.19.0-0'
+dependencies:
+    - name: crds
+      version: 0.0.0
+      repository: ""
+      condition: crds.enabled
+      tags: []
+      enabled: true
+      importvalues: []
+      alias: ""
+    - name: kube-state-metrics
+      version: 5.18.*
+      repository: https://prometheus-community.github.io/helm-charts
+      condition: kubeStateMetrics.enabled
+      tags: []
+      enabled: true
+      importvalues: []
+      alias: ""
+    - name: prometheus-node-exporter
+      version: 4.32.*
+      repository: https://prometheus-community.github.io/helm-charts
+      condition: nodeExporter.enabled
+      tags: []
+      enabled: true
+      importvalues: []
+      alias: ""
+    - name: grafana
+      version: 7.3.*
+      repository: https://grafana.github.io/helm-charts
+      condition: grafana.enabled
+      tags: []
+      enabled: true
+      importvalues: []
+      alias: ""
+type: application

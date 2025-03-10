@@ -1,0 +1,42 @@
+name: grafana
+home: https://grafana.com
+sources:
+    - https://github.com/grafana/grafana
+    - https://github.com/grafana/helm-charts
+version: 7.3.7
+description: The leading tool for querying and visualizing time series and metrics.
+keywords:
+    - monitoring
+    - metric
+maintainers:
+    - name: zanhsieh
+      email: zanhsieh@gmail.com
+      url: ""
+    - name: rtluckie
+      email: rluckie@cisco.com
+      url: ""
+    - name: maorfr
+      email: maor.friedman@redhat.com
+      url: ""
+    - name: Xtigyro
+      email: miroslav.hadzhiev@gmail.com
+      url: ""
+    - name: torstenwalter
+      email: mail@torstenwalter.de
+      url: ""
+icon: https://artifacthub.io/image/b4fed1a7-6c8f-4945-b99d-096efa3e4116
+apiversion: v2
+condition: ""
+tags: ""
+appversion: 10.4.0
+deprecated: false
+annotations:
+    artifacthub.io/license: Apache-2.0
+    artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/grafana/helm-charts
+        - name: Upstream Project
+          url: https://github.com/grafana/grafana
+kubeversion: ^1.8.0-0
+dependencies: []
+type: application

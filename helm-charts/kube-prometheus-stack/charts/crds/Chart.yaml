@@ -1,0 +1,17 @@
+name: crds
+home: ""
+sources: []
+version: 0.0.0
+description: ""
+keywords: []
+maintainers: []
+icon: ""
+apiversion: v2
+condition: ""
+tags: ""
+appversion: ""
+deprecated: false
+annotations: {}
+kubeversion: ""
+dependencies: []
+type: ""

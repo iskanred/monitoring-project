@@ -1,0 +1,13 @@
+alertmanager:
+  config:
+    inhibit_rules: [ ]
+    route:
+      receiver: telegram-chat
+      group_interval: 5m
+      repeat_interval: 6h
+      routes: [ ]
+    receivers:
+      - name: telegram-chat
+        telegram_configs:
+          - chat_id: -1002433281966
+            bot_token: {BOT_TOKEN}

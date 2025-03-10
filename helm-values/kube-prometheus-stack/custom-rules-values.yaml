@@ -1,0 +1,22 @@
+additionalPrometheusRulesMap:
+  node-custom:
+    groups:
+      - name: node-custom-network
+        interval: 1m
+        rules:
+          - alert: HightNetworkTrafficRecieve
+            expr: sum without (device) (rate(node_network_receive_bytes_total[3m])) > 1000000
+            for: 5m
+            labels:
+              severity: warning
+            annotations:
+              summary: Node recevied high traffic
+              description: K8S node ({{ $labels.instance }}) is receiving a lot of traffic over the network
+          - alert: HightNetworkTrafficTransmit
+            expr: sum without (device) (rate(node_network_transmit_bytes_total[5m])) > 1000000
+            for: 5m
+            labels:
+              severity: warning
+            annotations:
+              summary: Node transmitted high traffic
+              description: K8S node ({{ $labels.instance }}) is transmitting a lot of traffic over the network

@@ -1,0 +1,31 @@
+name: ingress-nginx
+home: https://github.com/kubernetes/ingress-nginx
+sources:
+    - https://github.com/kubernetes/ingress-nginx
+version: 4.10.0
+description: Ingress controller for Kubernetes using NGINX as a reverse proxy and load balancer
+keywords:
+    - ingress
+    - nginx
+maintainers:
+    - name: rikatz
+      email: ""
+      url: ""
+    - name: strongjz
+      email: ""
+      url: ""
+    - name: tao12345666333
+      email: ""
+      url: ""
+icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
+apiversion: v2
+condition: ""
+tags: ""
+appversion: 1.10.0
+deprecated: false
+annotations:
+    artifacthub.io/changes: '- "Update Ingress-Nginx version controller-v1.10.0"'
+    artifacthub.io/prerelease: "false"
+kubeversion: '>=1.20.0-0'
+dependencies: []
+type: ""
