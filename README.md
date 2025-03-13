@@ -83,9 +83,13 @@ export INGRESS_CONTROLLER_RELEASE_NAME="ingress-nginx"
      helm-scripts/kube-prometheus-stack/install.sh
     ```
 12. Now you can access your monitoring resources using their domain names.
-    * **Grafana**: `grafana.devops-innopolis.ru`
-    * **Prometheus**: `prometheus.devops-innopolis.ru`
-    * **Alertmanager**: `alertmanager.devops-innopolis.ru`
+    * **Grafana**: http://grafana.devops-innopolis.ru
+    * **Prometheus**: http://prometheus.devops-innopolis.ru
+    * **Alertmanager**: http://alertmanager.devops-innopolis.ru
+
+## 📀 Source Code
+You can check the source code for the project in our GitHub repository:
+https://github.com/iskanred/monitoring-project
 
 ## 📧 Contacts
 
