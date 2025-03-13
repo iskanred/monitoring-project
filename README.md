@@ -52,12 +52,6 @@ Let us briefly explain the components:
 
 ## 📕 Runbook
 
-export PROMETHEUS_WORKSPACE_ID="mondn78v34rtdho3rdk5"
-export PROMETHEUS_SECRET_API_ACCESS_KEY="AQVNyCT-W5xNoUAbGL0NpQgOp7JKn4u1x6up_shq"
-export MONITORING_NAMESPACE_NAME="monitoring"
-export KUBE_PROMETHEUS_RELEASE_NAME="prometheus"
-export INGRESS_CONTROLLER_RELEASE_NAME="ingress-nginx"
-
 1. First, you should have:
     * Configured Managed K8S cluster inside the Yandex Cloud.
     * Empty Managed Prometheus inside the Yandex Cloud. To create it use the [instruction](https://yandex.cloud/ru/docs/monitoring/operations/prometheus/#access) from Yandex Cloud.
