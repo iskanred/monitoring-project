@@ -3,11 +3,18 @@ alertmanager:
     inhibit_rules: [ ]
     route:
       receiver: telegram-chat
-      group_interval: 5m
-      repeat_interval: 6h
+      group_by: ['namespace']
+      group_wait: 0
+      group_interval: 15m
+      repeat_interval: 12h
       routes: [ ]
     receivers:
       - name: telegram-chat
         telegram_configs:
           - chat_id: -1002433281966
-            bot_token: {BOT_TOKEN}
+            bot_token: { BOT_TOKEN }
+            send_resolved: false
+            parse_mode: Markdown
+            message: >-
+              {{ range .Alerts }}{{ .Annotations.summary }}\n{{ end }}
+              {{ range .Alerts }}{{ .Annotations.description }}\n\n{{ end }}
