@@ -91,4 +91,4 @@ https://github.com/iskanred/monitoring-project
 |------------------|--------------------------------|
 | Iskander Nafikov | i.nafikov@innopolis.university |
 | Mohamad Bahja    | m.bahja@innopolis.university   |
-| Jacob Acor       | j.acor@innopolis.university    |
+| Jacob Akor       | j.akor@innopolis.university    |
